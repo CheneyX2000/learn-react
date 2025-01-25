@@ -1,8 +1,9 @@
 ## Personal Information:
 
-Full Name: Enter Your Full Name
+Full Name: Chengyou Xu
 
 ## Getting Started
+
 First, fork this repository and clone it to your local machine.
 
 Then, run the development server:
