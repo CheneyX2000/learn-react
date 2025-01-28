@@ -1,3 +1,9 @@
+/**
+ * When the Form is rendered, it appears to be frozen. 
+ * When a user enters stuff into the <input> tags or 
+ * clicks on the reset button nothing happens. 
+ * Identify and fix the error. 
+ */
 export default function Form() {
   let firstName = '';
   let lastName = '';

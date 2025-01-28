@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
+/**
+ * The component has a bug that 
+ * prevents the state from being updated correctly.
+ * Identify the bug and fix it.
+ */
 export default function Scoreboard() {
   const [player, setPlayer] = useState({
     firstName: 'John Woodrow',
