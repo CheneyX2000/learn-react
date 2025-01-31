@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+/**
+ * A more realistic example where the form submission is delayed by 5 seconds
+ * but the handle function still uses the values before they were changed
+ */
 export default function Form() {
   const [to, setTo] = useState('Alice');
   const [message, setMessage] = useState('Hello');

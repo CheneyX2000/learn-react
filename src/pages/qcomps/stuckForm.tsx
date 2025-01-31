@@ -1,5 +1,12 @@
 import { SetStateAction, useState } from "react";
 
+/**
+ * When the Form is rendered, it appears to be frozen. 
+ * When a user enters stuff into the <input> tags or 
+ * clicks on the reset button nothing happens. 
+ * Identify and fix the error. 
+ */
+
 export default function Form() {
   let [firstName, setFirstName] = useState('');
   let [lastName, setLastName] = useState('');
@@ -13,8 +20,8 @@ export default function Form() {
   }
 
   function handleReset() {
-    setFirstName('');
-    setLastName('');
+    setFirstName(firstName => firstName = '');
+    setLastName(lastName => lastName = '');
   }
 
   return (

@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
+/**
+ * The component has a bug that 
+ * prevents the state from being updated correctly.
+ * Identify the bug and fix it.
+ */
 export default function Scoreboard() {
   const [player, setPlayer] = useState({
     firstName: 'John Woodrow',
@@ -8,18 +13,23 @@ export default function Scoreboard() {
   });
 
   function handlePlusClick() {
-    player.likescore++;
+    const nextScore = player.likescore + 1;
+    const nextPlayer = {...player, likescore: nextScore};
+    setPlayer(prevPlayer => prevPlayer = nextPlayer);
   }
 
   function handleFirstNameChange(e: { target: { value: string; }; }) {
-    setPlayer({
+    setPlayer(prevPlayer => prevPlayer = {
       ...player,
       firstName: e.target.value,
     });
   }
 
   function handleLastNameChange(e: { target: { value: string; }; }) {
-    player.lastName = e.target.value;
+    setPlayer(prevPlayer => prevPlayer = {
+      ...player,
+      lastName: e.target.value,
+    });
   }
 
   return (

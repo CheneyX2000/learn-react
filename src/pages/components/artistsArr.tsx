@@ -11,6 +11,7 @@ export default function List() {
     <>
       <h1>Inspiring sculptors:</h1>
       <input
+        placeholder = "input sculptor's name"
         value={name}
         onChange={e => setName(e.target.value)}
       />

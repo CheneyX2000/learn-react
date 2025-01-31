@@ -1,5 +1,11 @@
 import { sculptureList } from '../../data/data';
 
+/**
+ * A component that displays a gallery of sculptures.
+ * The component is incorrect because it does not use state 
+ * to manage the index of the sculpture to display.
+ */
+
 export default function Gallery() {
   let index = 0;
 
